@@ -1,0 +1,166 @@
+.lineup-section {
+  width: 100%;
+  background: var(--bg-primary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid rgba(255, 85, 0, 0.04);
+}
+
+.lineup-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.lineup-grid {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0 24px;
+}
+
+/* Card Container */
+.member-card {
+  position: relative;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  padding: 40px 30px;
+  overflow: hidden;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.member-card:hover {
+  border-color: var(--accent-orange);
+}
+
+/* Glowing volcanic circle hidden at the bottom, rises on hover */
+.member-glow-effect {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 60px;
+  background: var(--accent-orange);
+  filter: blur(40px);
+  border-radius: 50%;
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.member-card:hover .member-glow-effect {
+  opacity: 0.5;
+  bottom: -20px;
+}
+
+/* Translucent giant background watermark */
+.watermark-icon {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  color: var(--text-main);
+  opacity: 0.015;
+  transform: scale(4.2) rotate(-15deg);
+  pointer-events: none;
+  transition: var(--transition-smooth);
+}
+
+.member-card:hover .watermark-icon {
+  opacity: 0.04;
+  transform: scale(4.7) rotate(0deg);
+  color: var(--accent-gold);
+}
+
+.member-info {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Circle holding the icon */
+.member-icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  transition: var(--transition-smooth);
+}
+
+.member-card:hover .member-icon-circle {
+  background: rgba(255, 85, 0, 0.08);
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+  box-shadow: 0 0 15px rgba(255, 85, 0, 0.25);
+}
+
+.member-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  transition: var(--transition-smooth);
+}
+
+.member-card:hover .member-name {
+  color: var(--accent-gold);
+}
+
+.member-role {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-orange);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.member-quote {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Tablet Layout (2 columns) */
+@media (max-width: 992px) {
+  .lineup-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* Mobile Layout (1 column) */
+@media (max-width: 600px) {
+  .lineup-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .member-card {
+    height: 250px;
+    padding: 30px;
+  }
+}
