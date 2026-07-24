@@ -59,11 +59,11 @@ export default function About() {
             <div className="stats-grid">
               <div className="stat-item">
                 <span className="stat-label">GENRE</span>
-                <span className="stat-value">Hard Fusion / Alt Rock</span>
+                <span className="stat-value">Rock/ Fusion/ MultiGenre</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">ESTD</span>
-                <span className="stat-value">2026</span>
+                <span className="stat-value">2025</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">BASE</span>
@@ -76,7 +76,7 @@ export default function About() {
             </div>
 
             <div className="card-quote">
-              "We don't play music. We channel the current."
+              "We don't play music. We channel the flow."
             </div>
           </div>
         </motion.div>

@@ -17,6 +17,7 @@ function App() {
       <About />
       <Lineup />
       <Gallery />
+      <Events />
       
       
       {/* Footer at the bottom */}

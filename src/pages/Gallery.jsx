@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
 import './Gallery.css';
+import adiosImage from '../assets/images/pravah photo.jpeg'
+import launchImage from '../assets/images/pravah launch.jpeg'
+import backstageImage from '../assets/images/backstage img.jpeg'
+import jamImage from '../assets/images/jam img.jpeg'
 
 export default function Gallery() {
   // Mock data representing shows. When you get photos, swap out the bgStyle gradients for actual image paths!
@@ -7,30 +11,30 @@ export default function Gallery() {
     {
       title: 'Explosive Launch',
       event: 'Live at UCER Auditorium',
-      date: 'Feb 14, 2026',
+      date: 'Feb 15, 2026',
       sizeClass: 'grid-wide', // Wide block
-      bgStyle: { background: 'linear-gradient(135deg, rgba(255, 85, 0, 0.45), rgba(179, 0, 0, 0.75))' }
+      bgStyle: { backgroundImage: `url(${launchImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }
     },
     {
       title: 'Jam Room Sessions',
-      event: 'Late Night Practices',
+      event: 'Practice before the chaos',
       date: 'Jan 2026',
       sizeClass: 'grid-tall', // Tall block
-      bgStyle: { background: 'linear-gradient(135deg, rgba(255, 179, 0, 0.45), rgba(255, 85, 0, 0.75))' }
+      bgStyle: { background: `url(${jamImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }
     },
     {
-      title: 'Backstage Chaos',
-      event: 'Behind the Scenes',
-      date: 'May 04, 2026',
+      title: 'Magazine Photoshoot',
+      event: 'Official photoshoot for Pravah',
+      date: 'March 19, 2026',
       sizeClass: 'grid-standard', // Square block
-      bgStyle: { background: 'linear-gradient(135deg, rgba(179, 0, 0, 0.5), rgba(5, 5, 5, 0.95))' }
+      bgStyle: { backgroundImage: `url(${backstageImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}
     },
     {
       title: 'Adios Amigos Show',
       event: 'Farewell Concert',
       date: 'May 04, 2026',
       sizeClass: 'grid-standard', // Square block
-      bgStyle: { background: 'linear-gradient(135deg, rgba(255, 85, 0, 0.5), rgba(255, 179, 0, 0.65))' }
+       bgStyle: { backgroundImage: `url(${adiosImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }
     }
   ];
 

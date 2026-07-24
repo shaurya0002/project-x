@@ -8,7 +8,7 @@ export default function Lineup() {
     { name: 'Apoorva Srivastava', role: 'Drums', icon: <Disc size={32} />, quote: 'The heartbeat of chaos.' },
     { name: 'Sanskar Kumar', role: 'Lead Guitar', icon: <Music size={32} />, quote: 'Heavy riffs that command.' },
     { name: 'Shaurya Pandey', role: 'Bass Guitar', icon: <Volume2 size={32} />, quote: 'Driving the low end.' },
-    { name: 'Pranjal Agrawal', role: 'Keyboards / Vocals', icon: <Cpu size={32} />, quote: 'Adding melodic depth.' },
+    { name: 'Pranjal Agrawal', role: 'Keyboards', icon: <Cpu size={32} />, quote: 'Adding melodic depth.' },
     { name: 'Sathakshi and Shivashish', role: 'Lead Vocals', icon: <Mic size={32} />, quote: 'Screaming the truth.' },
     { name: 'Tulsi Nandan Pandey', role: 'Producer', icon: <Music size={32} />, quote: 'Adding the tracks.'},
     { name: "Anupam Mishra", role: 'On the Tabla', icon: <Music size={32}/>, quote: 'Matching the Taal.'}

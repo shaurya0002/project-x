@@ -32,7 +32,7 @@ export default function Navbar() {
         </div>
         
         {/* Call to action button */}
-        <a href="#contact" className="nav-cta">Book Us</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pravah.ucer@gmail.com" className="nav-cta">Book Us</a>
       </div>
     </nav>
   );
