@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react'; // Import Hamburger and Close icons
 import './Navbar.css';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // State to open/close mobile drawer
 
-  // Monitor scrolling to turn navbar background solid/translucent when scrolling down
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -18,21 +19,28 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'open' : ''}`}>
       <div className="nav-container">
-        {/* Logo link back to Hero top */}
-        <a href="#hero" className="nav-logo glow-text">PRAVAH</a>
+        {/* Logo (closes mobile menu when clicked) */}
+        <a href="#hero" className="nav-logo glow-text" onClick={() => setIsOpen(false)}>PRAVAH</a>
         
-        {/* Navigation links targeting the IDs of each section */}
-        <div className="nav-links">
-          <a href="#about" className="nav-link">About</a>
-          <a href="#lineup" className="nav-link">Lineup</a>
-          <a href="#gallery" className="nav-link">Gallery</a>
-          <a href="/events" className="nav-link hightlight-link">Upcoming Events</a>
+        {/* Mobile Hamburger toggle button */}
+        <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+        
+        {/* Links list (shows/hides based on isOpen state) */}
+        <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <a href="#about" className="nav-link" onClick={() => setIsOpen(false)}>About</a>
+          <a href="#lineup" className="nav-link" onClick={() => setIsOpen(false)}>Lineup</a>
+          <a href="#gallery" className="nav-link" onClick={() => setIsOpen(false)}>Gallery</a>
+          
+          {/* Mobile CTA (only shown inside drawer) */}
+          <a href="#contact" className="nav-cta mobile-cta" onClick={() => setIsOpen(false)}>Book Show</a>
         </div>
         
-        {/* Call to action button */}
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pravah.ucer@gmail.com" className="nav-cta">Book Us</a>
+        {/* Desktop CTA (hidden on mobile) */}
+        <a href="#contact" className="nav-cta desktop-cta">Book Show</a>
       </div>
     </nav>
   );

@@ -9,12 +9,11 @@
   background: transparent;
 }
 
-/* Translucent backdrop filter when scrolling over fire/smoke images */
 .navbar.scrolled {
   padding: 16px 48px;
-  background: rgba(5, 5, 5, 0.85); /* Matches body black */
+  background: rgba(5, 5, 5, 0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 85, 0, 0.15); /* Orange divider glow */
+  border-bottom: 1px solid rgba(255, 85, 0, 0.15);
 }
 
 .nav-container {
@@ -30,21 +29,23 @@
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 2px;
-  color: var(--accent-gold); /* Electric gold */
+  color: var(--accent-gold);
   text-decoration: none;
   transition: var(--transition-smooth);
+  z-index: 101; /* Keep logo above drawer */
 }
 
 .nav-links {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 
 .nav-link {
   font-family: var(--font-body);
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-muted); /* Ash gray */
+  color: var(--text-muted);
   text-decoration: none;
   transition: var(--transition-smooth);
   position: relative;
@@ -54,7 +55,6 @@
   color: var(--accent-gold);
 }
 
-/* Orange fire underline animation on hover */
 .nav-link::after {
   content: '';
   position: absolute;
@@ -87,4 +87,80 @@
 .nav-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 20px rgba(255, 85, 0, 0.6);
+}
+
+/* Toggle menu button (hidden on desktop) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-main);
+  cursor: pointer;
+  z-index: 101; /* Keeps toggle above sliding drawer */
+  transition: var(--transition-smooth);
+}
+
+.nav-toggle:hover {
+  color: var(--accent-orange);
+}
+
+.desktop-cta {
+  display: block;
+}
+
+.mobile-cta {
+  display: none;
+}
+
+/* 📱 RESPONSIVE LAYOUT (Mobile & Tablets) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 24px; /* Reduce side padding on mobile */
+  }
+  
+  .navbar.scrolled {
+    padding: 12px 24px;
+  }
+
+  .nav-toggle {
+    display: block; /* Show hamburger icon */
+  }
+
+  .desktop-cta {
+    display: none; /* Hide from the top bar flow */
+  }
+
+  /* Slide-out drawer menu styles */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen to the right by default */
+    width: 280px;
+    height: 100vh;
+    background: rgba(5, 5, 5, 0.98); /* Volcanic dark glass */
+    backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(255, 85, 0, 0.15); /* Orange glowing edge */
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 0.4s; /* Smooth slide-in */
+    z-index: 99;
+  }
+
+  /* Slide menu in when active */
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 18px; /* Larger tap targets on phone */
+    letter-spacing: 2px;
+  }
+
+  .mobile-cta {
+    display: block; /* Show CTA button inside the mobile drawer */
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
