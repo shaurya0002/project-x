@@ -198,11 +198,10 @@
 }
 
 @media (max-width: 768px) {
-  .hero-logo-text { font-size: 64px; }
-  .hero-subtitle { font-size: 13px; letter-spacing: 3px; }
+  .hero-logo-text { font-size: 42px; }
+  .hero-subtitle { font-size: 10px; letter-spacing: 2px; }
   .hero-buttons { flex-direction: column; gap: 12px; align-items: center; }
   .hero-btn { width: 100%; max-width: 280px; }
-  @media (max-width: 768px) {
   /* 1. Shrink the giant glowing orbs so they fit mobile screens */
   .gold-orb {
     width: 200px;
@@ -235,5 +234,4 @@
   .hero-section {
     padding: 0 16px;
   }
-}
 }
