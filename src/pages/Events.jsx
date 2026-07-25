@@ -6,7 +6,7 @@ const EVENT_CONFIG = {
   title: "Freshers 2026",
   description: "Unleashing the sound of UCER once again! We're performing a special high-energy live set to welcome the new batch. Prepare for absolute madness.",
   venue: "United Institue of Technology, main auditorium",
-  targetDate: "", 
+  targetDate: "2026-07-25T10:00:00", 
 };
 
 // Renamed from 'Event' to 'Events' to avoid browser clash

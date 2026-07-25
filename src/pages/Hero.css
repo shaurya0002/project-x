@@ -202,4 +202,38 @@
   .hero-subtitle { font-size: 13px; letter-spacing: 3px; }
   .hero-buttons { flex-direction: column; gap: 12px; align-items: center; }
   .hero-btn { width: 100%; max-width: 280px; }
+  @media (max-width: 768px) {
+  /* 1. Shrink the giant glowing orbs so they fit mobile screens */
+  .gold-orb {
+    width: 200px;
+    height: 200px;
+    top: 25%;
+    left: 10%;
+  }
+
+  .orange-orb {
+    width: 250px;
+    height: 250px;
+    bottom: 15%;
+    right: 5%;
+  }
+
+  .red-orb {
+    width: 180px;
+    height: 180px;
+    top: 40%;
+    right: 20%;
+  }
+
+  /* 2. Scale down the logo text size slightly more if it cuts off */
+  .hero-logo-text { 
+    font-size: 56px; 
+    letter-spacing: 4px;
+  }
+  
+  /* 3. Ensure the main container doesn't allow any side-scrolling */
+  .hero-section {
+    padding: 0 16px;
+  }
+}
 }
