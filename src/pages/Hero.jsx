@@ -55,12 +55,17 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.9, duration: 0.8 }}
         >
-          <a href="#about" className="hero-btn primary-btn">
+          <a href="#contact" className="hero-btn primary-btn">
+            Book Show
+          </a>
+
+          <a href="#about" className="hero-btn secondary-btn">
             Enter The Chaos
           </a>
           <a href="#lineup" className="hero-btn secondary-btn">
             Meet the Band
           </a>
+
         </motion.div>
       </div>
 

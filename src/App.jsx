@@ -1,28 +1,24 @@
+import './index.css';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from './components/Navbar';
-import Hero from './pages/Hero';
-import About from './pages/About';
-import Lineup from './pages/Lineup';
-import Gallery from './pages/Gallery';
-import Events from "./pages/Events"
+import Home from './pages/Home';
+import Register from './pages/Register';
 import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div style={{ backgroundColor: 'var(--bg-primary)', minHeight: '100vh', width: '100%' }}>
-      {/* Navigation bar floating at the top */}
-      <Navbar />
-      
-      {/* Sequential scrollable pages */}
-      <Hero />
-      <About />
-      <Lineup />
-      <Gallery />
-      <Events />
-      
-      
-      {/* Footer at the bottom */}
-      <Footer />
-    </div>
+function App(){
+  return(
+    <Router>
+      <div style={{backgroundColor: 'var(--bg-primary)', minHeight: '100vh', width: '100%'}}>
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="register" element={<Register />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

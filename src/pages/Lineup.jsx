@@ -5,7 +5,7 @@ import './Lineup.css';
 export default function Lineup() {
   // Array of band members with corresponding icons and text
   const members = [
-    { name: 'Apoorva Srivastava', role: 'Drums', icon: <Disc size={32} />, quote: 'The heartbeat of chaos.' },
+    { name: 'Apoorv Srivastava', role: 'Drums', icon: <Disc size={32} />, quote: 'The heartbeat of chaos.' },
     { name: 'Sanskar Kumar', role: 'Lead Guitar', icon: <Music size={32} />, quote: 'Heavy riffs that command.' },
     { name: 'Shaurya Pandey', role: 'Bass Guitar', icon: <Volume2 size={32} />, quote: 'Driving the low end.' },
     { name: 'Pranjal Agrawal', role: 'Keyboards', icon: <Cpu size={32} />, quote: 'Adding melodic depth.' },

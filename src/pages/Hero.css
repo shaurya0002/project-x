@@ -153,8 +153,9 @@
 /* CTAs layout */
 .hero-buttons {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-btn {

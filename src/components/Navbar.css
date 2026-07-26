@@ -164,3 +164,20 @@
     margin-top: 10px;
   }
 }
+
+/* Add this class to your Navbar.css file */
+.highlight-nav-link {
+  color: var(--accent-gold) !important;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 0.4);
+}
+
+.highlight-nav-link:hover {
+  color: var(--accent-orange) !important;
+  text-shadow: 0 0 12px rgba(255, 85, 0, 0.6);
+}
+
+/* Update hover underline for highlight link to be orange/red */
+.highlight-nav-link::after {
+  background: var(--accent-orange) !important;
+}
