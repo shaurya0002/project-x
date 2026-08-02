@@ -91,9 +91,8 @@ export default function Register() {
             </div>
 
             <div className="input-group">
-              <label>PERFORMANCE CLIP LINK (Drive/YouTube)</label>
-              <input type="url" placeholder="https://drive.google.com/..." required />
-              <span className="input-hint">Make sure sharing permissions are public!</span>
+              <label>Enter your email</label>
+              <input type="email" placeholder="kurtcobain0504@gmail.com" required />
             </div>
 
             <button type="submit" className="form-submit-btn">Submit Application</button>
