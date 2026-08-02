@@ -17,7 +17,7 @@
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 3. RESET */
+/* 3. RESET & VIEWPORT LOCKS (Prevents mobile side-scrolling) */
 * {
   margin: 0;
   padding: 0;
@@ -29,15 +29,28 @@ html {
   background-color: var(--bg-primary);
   color: var(--text-main);
   font-family: var(--font-body);
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
   -webkit-font-smoothing: antialiased;
 }
 
-/* 4. FIRE/LAVA CUSTOM SCROLLBAR */
+/* 4. REACT APP ROOT OVERFLOW GUARD */
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 5. FIRE/LAVA CUSTOM SCROLLBAR */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -54,7 +67,7 @@ body {
   box-shadow: 0 0 10px var(--accent-orange);
 }
 
-/* 5. VOLCANIC UTILITIES */
+/* 6. VOLCANIC UTILITIES */
 
 /* Fire Glow text effect */
 .fire-glow {
@@ -80,4 +93,19 @@ section {
   align-items: center;
   position: relative;
   overflow: hidden;
+}
+
+/* 7. TABLET/MOBILE RESPONSIVE SAFETY PADDING */
+@media (max-width: 992px) {
+  .about-container {
+    padding: 0 20px;
+  }
+  
+  .footer-container {
+    padding: 0 20px;
+  }
+  
+  .footer-bottom {
+    padding: 20px 20px 0 20px;
+  }
 }

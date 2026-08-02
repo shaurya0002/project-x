@@ -173,6 +173,7 @@ export default function Register() {
                   <option value="keys">Keyboards / Synthesizer</option>
                   <option value="other">Violin / Fusion Instruments</option>
                   <option value="management">Band Manager / Sound Engineer</option>
+                  <option value="Others">Others</option>
                 </select>
               </div>
 

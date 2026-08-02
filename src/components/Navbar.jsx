@@ -63,11 +63,7 @@ export default function Navbar() {
           <a href="#about" className="nav-link" onClick={(e) => handleNavClick(e, '/', '#about')}>About</a>
           <a href="#lineup" className="nav-link" onClick={(e) => handleNavClick(e, '/', '#lineup')}>Lineup</a>
           <a href="#gallery" className="nav-link" onClick={(e) => handleNavClick(e, '/', '#gallery')}>Gallery</a>
-          
-          {/* Dedicated Audition link using Router Link */}
-          <Link to="/register" className="nav-link highlight-nav-link" onClick={() => setIsOpen(false)}>
-            Register
-          </Link>
+
         </div>
       </div>
     </nav>
