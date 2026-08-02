@@ -6,15 +6,15 @@ export default function About() {
     <section id="about" className="about-section">
       <div className="about-container">
         
-        {/* LEFT COLUMN: The band description and key tags */}
+        {/* LEFT COLUMN: Slides UP vertically (y: 50 to 0) instead of horizontally */}
         <motion.div 
           className="about-left"
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true, margin: "-100px" }}
           variants={{
-            initial: { x: -60, opacity: 0 },
-            whileInView: { x: 0, opacity: 1 }
+            initial: { y: 50, opacity: 0 }, // 👈 Changed from x: -60 to y: 50
+            whileInView: { y: 0, opacity: 1 }  // 👈 Changed from x: 0 to y: 0
           }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
@@ -36,15 +36,15 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* RIGHT COLUMN: Volcanic Profile Stats Card */}
+        {/* RIGHT COLUMN: Slides UP vertically (y: 50 to 0) with a slight delay */}
         <motion.div 
           className="about-right"
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true, margin: "-100px" }}
           variants={{
-            initial: { x: 60, opacity: 0 },
-            whileInView: { x: 0, opacity: 1 }
+            initial: { y: 50, opacity: 0 }, // 👈 Changed from x: 60 to y: 50
+            whileInView: { y: 0, opacity: 1 }  // 👈 Changed from x: 0 to y: 0
           }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
         >
@@ -59,11 +59,11 @@ export default function About() {
             <div className="stats-grid">
               <div className="stat-item">
                 <span className="stat-label">GENRE</span>
-                <span className="stat-value">Rock/ Fusion/ MultiGenre</span>
+                <span className="stat-value">Hard Fusion / Alt Rock</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">ESTD</span>
-                <span className="stat-value">2025</span>
+                <span className="stat-value">2026</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">BASE</span>
@@ -71,12 +71,12 @@ export default function About() {
               </div>
               <div className="stat-item">
                 <span className="stat-label">LINEUP SIZE</span>
-                <span className="stat-value">9 Members</span>
+                <span className="stat-value">8 Members</span>
               </div>
             </div>
 
             <div className="card-quote">
-              "We don't play music. We channel the flow."
+              "We don't play music. We channel the current."
             </div>
           </div>
         </motion.div>
