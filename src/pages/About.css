@@ -13,13 +13,15 @@
   grid-template-columns: 1.2fr 1fr;
   gap: 80px;
   align-items: center;
+  padding: 0 24px; /* Added padding to keep content away from the screen edges */
 }
 
-/* Left Column Styling */
+/* Left Column (Bio text) */
 .about-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 .section-subtitle {
@@ -54,6 +56,8 @@
   line-height: 1.8;
   color: var(--text-muted);
   margin-bottom: 24px;
+  max-width: 600px; /* 👈 Limit text width so it wraps nicely */
+  width: 100%;
 }
 
 .highlight-text {
@@ -89,12 +93,13 @@
   box-shadow: 0 0 12px rgba(255, 85, 0, 0.3);
 }
 
-/* Right Column Card Styling */
+/* Right Column (Stats card) */
 .about-right {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 
 .stats-card {
@@ -109,7 +114,6 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Orange/Gold linear gradient line at the top */
 .card-glow-border {
   position: absolute;
   top: 0;
@@ -135,7 +139,6 @@
   letter-spacing: 1.5px;
 }
 
-/* Blinking dot, simulating a "live" system status */
 .pulse-dot {
   width: 8px;
   height: 8px;
@@ -193,19 +196,40 @@
   padding-top: 24px;
 }
 
-/* Mobile responsiveness */
+/* 📱 RESPONSIVE ADJUSTMENTS */
 @media (max-width: 992px) {
+
+  .section-title {
+    font-size: 32px;       /* Shrunk from 44px to 32px so it fits phone widths */
+    letter-spacing: 1px;   /* Slightly tighten letter spacing */
+    line-height: 1.2;
+  }
+
   .about-container {
     grid-template-columns: 1fr;
     gap: 50px;
+    padding: 0 16px;
   }
+  
   .about-left {
     align-items: center;
     text-align: center;
+    width: 100%;            /* 👈 Force the parent to match the screen width */
+    max-width: 100%;        /* 👈 Prevent it from stretching */
   }
+
+  .about-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;            /* 👈 Force the text block to shrink to phone width */
+    max-width: 100%;        /* 👈 Override any desktop width limits */
+    padding: 0 16px;        /* Adds a 16px safety margin on the left/right */
+  }
+
   .about-traits {
     justify-content: center;
   }
+
   .stat-item {
     align-items: center;
     border-left: none;
@@ -213,7 +237,8 @@
     padding-left: 0;
     padding-bottom: 12px;
   }
+  
   .stat-item:last-child {
     border-bottom: none;
   }
-}   
+}
