@@ -134,7 +134,6 @@ export default function Register() {
                 />
               </div>
 
-              <div className="input-grid">
                 <div className="input-group">
                   <label>ROLL NUMBER</label>
                   <input 
@@ -157,7 +156,6 @@ export default function Register() {
                     disabled={status === 'loading'}
                   />
                 </div>
-              </div>
 
               <div className="input-group">
                 <label>INSTRUMENT / ROLE</label>
