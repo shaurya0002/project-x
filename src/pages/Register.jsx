@@ -38,7 +38,7 @@ export default function Register() {
         method: 'POST',
         mode: 'no-cors', // Prevents CORS blocks on client redirect responses
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain',
         },
         body: JSON.stringify(formData)
       });
