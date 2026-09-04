@@ -34,7 +34,7 @@ export default function Hero() {
         >
           {/* Note: When you crop your logo from the poster, save it in src/assets/pravah-logo.png
               and you can swap this text with the <img> tag below! */}
-          <h1 className="hero-logo-text fire-glow">PRAVAH</h1>
+          <h1 className="hero-logo-text fire-glow">Pravah</h1>
           
           {/* <img src="/src/assets/pravah-logo.png" alt="Pravah Logo" className="hero-logo-img" /> */}
         </motion.div>

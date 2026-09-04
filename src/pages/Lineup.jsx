@@ -1,17 +1,32 @@
 import { motion } from 'framer-motion';
-import { Mic, Music, Disc, Cpu, Volume2, Flame } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Mic, Music, Sliders, ArrowRight } from 'lucide-react';
 import './Lineup.css';
 
 export default function Lineup() {
-  // Array of band members with corresponding icons and text
-  const members = [
-    { name: 'Apoorv Srivastava', role: 'Drums', icon: <Disc size={32} />, quote: 'The heartbeat of chaos.' },
-    { name: 'Sanskar Kumar', role: 'Lead Guitar', icon: <Music size={32} />, quote: 'Heavy riffs that command.' },
-    { name: 'Shaurya Pandey', role: 'Bass Guitar', icon: <Volume2 size={32} />, quote: 'Driving the low end.' },
-    { name: 'Pranjal Agrawal', role: 'Keyboards', icon: <Cpu size={32} />, quote: 'Adding melodic depth.' },
-    { name: 'Sathakshi and Shivashish', role: 'Lead Vocals', icon: <Mic size={32} />, quote: 'Screaming the truth.' },
-    { name: 'Tulsi Nandan Pandey', role: 'Producer', icon: <Music size={32} />, quote: 'Adding the tracks.'},
-    { name: "Anupam Mishra", role: 'On the Tabla', icon: <Music size={32}/>, quote: 'Matching the Taal.'}
+  // Team categories for the lineup section
+  const teams = [
+    {
+      id: 'vocalists',
+      title: 'Our Vocalists',
+      category: 'VOCAL TEAM',
+      icon: <Mic size={32} />,
+      quote: 'Screaming the truth and commanding the stage with power, energy, and raw emotion.'
+    },
+    {
+      id: 'instrumental',
+      title: 'The Instrumental Team',
+      category: 'MUSIC & RHYTHM',
+      icon: <Music size={32} />,
+      quote: 'Heavy riffs, thundering beats, and intricate melodies driving the sonic pulse.'
+    },
+    {
+      id: 'working-members',
+      title: 'The Working Members',
+      category: 'CREW & PRODUCTION',
+      icon: <Sliders size={32} />,
+      quote: 'The creative backbone powering sound engineering, production, and execution.'
+    }
   ];
 
   // Framer Motion: container triggers staggered entries for all children cards
@@ -37,7 +52,7 @@ export default function Lineup() {
   return (
     <section id="lineup" className="lineup-section">
       <div className="lineup-header">
-        <span className="section-subtitle">THE TEAM</span>
+        <span className="section-subtitle">THE TEAMS</span>
         <h2 className="section-title">THE LINEUP</h2>
         <div className="title-underline"></div>
       </div>
@@ -50,33 +65,39 @@ export default function Lineup() {
         whileInView="whileInView"
         viewport={{ once: true, margin: "-50px" }}
       >
-        {members.map((member, index) => (
+        {teams.map((team) => (
           <motion.div 
-            key={index}
-            className="member-card"
+            key={team.id}
             variants={cardVariants}
             whileHover={{ y: -8, scale: 1.02 }} // Interactive lift on mouse hover
           >
-            {/* The orange bottom volcanic glow visible on hover */}
-            <div className="member-glow-effect"></div>
-            
-            {/* Large watermarked icon rotated in the background */}
-            <div className="watermark-icon">
-              {member.icon}
-            </div>
-
-            <div className="member-info">
-              {/* Rounded small icon circle */}
-              <div className="member-icon-circle">
-                {member.icon}
+            <Link to={`/lineup/${team.id}`} className="member-card team-card-link">
+              {/* The orange bottom volcanic glow visible on hover */}
+              <div className="member-glow-effect"></div>
+              
+              {/* Large watermarked icon rotated in the background */}
+              <div className="watermark-icon">
+                {team.icon}
               </div>
-              <h3 className="member-name">{member.name}</h3>
-              <p className="member-role">{member.role}</p>
-              <p className="member-quote">"{member.quote}"</p>
-            </div>
+
+              <div className="member-info">
+                {/* Rounded small icon circle */}
+                <div className="member-icon-circle">
+                  {team.icon}
+                </div>
+                <span className="member-role">{team.category}</span>
+                <h3 className="member-name">{team.title}</h3>
+                <p className="member-quote">"{team.quote}"</p>
+                <div className="card-action-hint">
+                  <span>View Members</span>
+                  <ArrowRight size={16} />
+                </div>
+              </div>
+            </Link>
           </motion.div>
         ))}
       </motion.div>
     </section>
   );
 }
+

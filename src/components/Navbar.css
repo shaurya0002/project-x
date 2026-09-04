@@ -24,6 +24,26 @@
   align-items: center;
 }
 
+.nav-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  z-index: 101; /* Keep logo above drawer */
+}
+
+.institution-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.12));
+  transition: var(--transition-smooth);
+}
+
+.nav-brand-link:hover .institution-logo {
+  transform: scale(1.06);
+}
+
 .nav-logo {
   font-family: var(--font-display);
   font-size: 24px;
@@ -32,8 +52,8 @@
   color: var(--accent-gold);
   text-decoration: none;
   transition: var(--transition-smooth);
-  z-index: 101; /* Keep logo above drawer */
 }
+
 
 .nav-links {
   display: flex;

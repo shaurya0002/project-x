@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom'; // Added router utilities
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import institutionLogo from '../assets/images/institution-logo.png';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -34,7 +35,7 @@ export default function Navbar() {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // If we are on /register, navigate to home first, then scroll
+      // If we are on another page, navigate to home first, then scroll
       navigate(path);
       setTimeout(() => {
         const element = document.querySelector(selector);
@@ -49,9 +50,10 @@ export default function Navbar() {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'open' : ''}`}>
       <div className="nav-container">
         
-        {/* Logo redirecting to top of Home page */}
-        <Link to="/" className="nav-logo glow-text" onClick={(e) => handleNavClick(e, '/', '#hero')}>
-          PRAVAH
+        {/* Top-left Institution Logo and Brand redirecting to Home */}
+        <Link to="/" className="nav-brand-link" onClick={(e) => handleNavClick(e, '/', '#hero')}>
+          <img src={institutionLogo} alt="Institution Logo" className="institution-logo" />
+          <span className="nav-logo glow-text">PRAVAH</span>
         </Link>
         
         <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
@@ -68,4 +70,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+}
