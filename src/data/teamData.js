@@ -19,6 +19,12 @@ export const teamData = {
         role: 'Male Lead Vocalist',
         quote: 'Adding power and harmonic depth to every chorus.',
         instagram: 'https://www.instagram.com/suyashmishra_official?igsi=MXZlNjh2cmpvaHQ0MA==' 
+      },
+      {
+        id: 3,
+        name: 'Kritika',
+        role: 'Vocalist',
+        instagram: 'https://www.instagram.com/krittttsss_?igsi=amh4OXg5emU5Y2Zk'
       }
     ]
   },
@@ -85,6 +91,13 @@ export const teamData = {
         quote: 'Managing every performance and showcasing it on the media',
         instagram: 'https://instagram.com/'
       },
+      {
+        id: 3,
+        name: 'Mayank Shukla',
+        role: 'Visual Graphics and video editing',
+        quote: 'Enhancing the moments captured',
+        instagram: 'https://www.instagram.com/mankupulled?igsi=MXZoMGcyYXVnZmdocw=='
+      }
     ]
   }
 };
