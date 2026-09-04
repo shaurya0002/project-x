@@ -25,6 +25,16 @@ export const teamData = {
         name: 'Kritika',
         role: 'Vocalist',
         instagram: 'https://www.instagram.com/krittttsss_?igsi=amh4OXg5emU5Y2Zk'
+      },
+      { id: 4,
+        name: 'Akash',
+        role: 'Vocalist',
+        instagram: 'https://www.instagram.com/akash.vocal?igsi=NGVudWNrZXo1OG9h',
+      },
+      {id: 5,
+        name: 'Aditi',
+        role: 'Vocalist',
+        instagram: 'https://www.instagram.com/aditi_shukla.exe?igsi=Y2t2N2k5ZWI5aGdn'
       }
     ]
   },
