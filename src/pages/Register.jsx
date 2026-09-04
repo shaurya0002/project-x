@@ -4,7 +4,7 @@ import { Music, Award, Loader2, CheckCircle2 } from 'lucide-react';
 import './Register.css';
 
 export default function Register() {
-  // 1. FORM STATES
+
   const [formData, setFormData] = useState({
     name: '',
     rollNumber: '',
@@ -14,12 +14,12 @@ export default function Register() {
     performanceLink: ''
   });
   
-  const [status, setStatus] = useState('idle'); // idle, loading, success, error
+  const [status, setStatus] = useState('idle'); 
 
-  // Paste your Google Web App URL here:
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzgvPtB22JHIYrghruNm4EtS7wlZFyL8to3EIN4GLydQANcwHHu4eEmogvvrjb-Fv9W/exec";
 
-  // Update form inputs locally
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd_tWO6aRwwKKNhKsz2Y6BPGIKoaR7NitBj6WOOVaInT8BDuHzZCJiTYF3Fcrrup54wg/exec";
+
+
   const handleChange = (e, field) => {
     setFormData({
       ...formData,
