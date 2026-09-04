@@ -33,7 +33,7 @@ export const teamData = {
         name: 'Sanskar Kumar',
         role: 'Lead Guitar',
         quote: 'The Riffster',
-        instagram: 'https://instagram.com/'
+        instagram: 'https://www.instagram.com/leonskenneddyyy?utm_source=qr&igsi=YjhpNWozcWNudTcx'
       },
       {
         id: 2,
@@ -55,6 +55,13 @@ export const teamData = {
         role: 'On the Tabla',
         quote: 'Matching the Taal.',
         instagram: 'https://instagram.com/'
+      },
+      {
+        id: 5,
+        name: 'Apoorv Srivastava',
+        role:'Drums',
+        quote: 'Matching the beats',
+        instagram: 'https://www.instagram.com/_psk47?igsi=MWN0amFnbXdpMjRiMg%3D%3D&utm_source=qr'
       }
     ]
   },
