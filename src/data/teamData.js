@@ -8,17 +8,17 @@ export const teamData = {
     members: [
       {
         id: 1,
-        name: 'Sathakshi & Shivashish',
-        role: 'Lead Vocals',
+        name: 'Sathakshi',
+        role: 'Female Lead Vocalist',
         quote: 'Screaming the truth and commanding the crowd.',
-        instagram: 'https://instagram.com/' // Replace with actual Instagram link (e.g. https://instagram.com/username)
+        instagram: 'https://instagram.com/' 
       },
       {
         id: 2,
-        name: 'Vocalist Name 2',
-        role: 'Backing Vocals / Harmony',
+        name: 'Suyash',
+        role: 'Male Lead Vocalist',
         quote: 'Adding power and harmonic depth to every chorus.',
-        instagram: 'https://instagram.com/' // Replace with actual Instagram link
+        instagram: 'https://www.instagram.com/suyashmishra_official?igsi=MXZlNjh2cmpvaHQ0MA==' 
       }
     ]
   },
@@ -30,34 +30,27 @@ export const teamData = {
     members: [
       {
         id: 1,
-        name: 'Apoorv Srivastava',
-        role: 'Drums',
-        quote: 'The heartbeat of chaos.',
+        name: 'Sanskar Kumar',
+        role: 'Lead Guitar',
+        quote: 'The Riffster',
         instagram: 'https://instagram.com/'
       },
       {
         id: 2,
-        name: 'Sanskar Kumar',
-        role: 'Lead Guitar',
-        quote: 'Heavy riffs that command.',
-        instagram: 'https://instagram.com/'
+        name: 'Pranjal Agrawal',
+        role: 'Keyboardist',
+        quote: 'Commanding notes that dont miss',
+        instagram: 'https://www.instagram.com/pranjalagrawal358?igsi=MXh2Nmp2cjM5Z3BxZQ=='
       },
       {
         id: 3,
         name: 'Shaurya Pandey',
         role: 'Bass Guitar',
         quote: 'Driving the low end.',
-        instagram: 'https://instagram.com/'
+        instagram: 'https://www.instagram.com/shauinchaos?igsi=cXRicXVpMndmc2hz'
       },
       {
         id: 4,
-        name: 'Pranjal Agrawal',
-        role: 'Keyboards',
-        quote: 'Adding melodic depth.',
-        instagram: 'https://instagram.com/'
-      },
-      {
-        id: 5,
         name: 'Anupam Mishra',
         role: 'On the Tabla',
         quote: 'Matching the Taal.',
@@ -76,22 +69,15 @@ export const teamData = {
         name: 'Tulsi Nandan Pandey',
         role: 'Producer & Track Arrangements',
         quote: 'Adding the tracks and polishing the sonic signature.',
-        instagram: 'https://instagram.com/'
+        instagram: 'https://www.instagram.com/talksick.xd?igsi=dDVucG0zZHc3cWho/'
       },
       {
         id: 2,
-        name: 'Crew Member Name 1',
-        role: 'Sound Engineering / Mixing',
-        quote: 'Precision control behind the audio console.',
+        name: 'Pranavi',
+        role: 'Social Media Manager',
+        quote: 'Managing every performance and showcasing it on the media',
         instagram: 'https://instagram.com/'
       },
-      {
-        id: 3,
-        name: 'Crew Member Name 2',
-        role: 'Stage Management & Logistics',
-        quote: 'Keeping the show running flawlessly.',
-        instagram: 'https://instagram.com/'
-      }
     ]
   }
 };

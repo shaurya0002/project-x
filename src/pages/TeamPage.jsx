@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ExternalLink, User } from 'lucide-react';
@@ -22,6 +22,41 @@ const InstagramIcon = ({ size = 18 }) => (
     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
   </svg>
 );
+
+// Component that renders custom member avatar or stylized volcanic initials badge
+function MemberAvatar({ member }) {
+  const [imgError, setImgError] = useState(false);
+
+  // Helper to extract initials from member name (e.g. "Sanskar Kumar" -> "SK")
+  const getInitials = (name) => {
+    if (!name) return 'P';
+    const parts = name.trim().split(' ').filter(Boolean);
+    if (parts.length === 1) return parts[0][0].toUpperCase();
+    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+  };
+
+  const hasAvatarUrl = member.avatar && member.avatar.trim().length > 0;
+
+  if (hasAvatarUrl && !imgError) {
+    return (
+      <div className="member-avatar-circle has-image">
+        <img 
+          src={member.avatar} 
+          alt={member.name} 
+          className="member-avatar-img"
+          onError={() => setImgError(true)} 
+        />
+      </div>
+    );
+  }
+
+  // Stylish Volcanic Initials Badge
+  return (
+    <div className="member-avatar-circle initial-avatar">
+      <span className="avatar-initials">{getInitials(member.name)}</span>
+    </div>
+  );
+}
 
 
 export default function TeamPage() {
@@ -103,9 +138,7 @@ export default function TeamPage() {
             >
               <div className="card-glow"></div>
               
-              <div className="member-avatar-circle">
-                <User size={32} />
-              </div>
+              <MemberAvatar member={member} />
 
               <div className="member-details">
                 {/* Clicking on the name opens their Instagram link */}
@@ -144,3 +177,4 @@ export default function TeamPage() {
     </section>
   );
 }
+
