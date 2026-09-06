@@ -15,10 +15,10 @@ export default function Lineup() {
     },
     {
       id: 'instrumental',
-      title: 'The Instrumental Team',
+      title: 'Instrumental Team',
       category: 'MUSIC & RHYTHM',
       icon: <Music size={32} />,
-      quote: 'Heavy riffs, thundering beats, and intricate melodies driving the sonic pulse.'
+      quote: 'Heavy riffs, thundering beats, and melodies driving the sonic pulse.'
     },
     {
       id: 'working-members',
@@ -100,4 +100,4 @@ export default function Lineup() {
     </section>
   );
 }
-
+

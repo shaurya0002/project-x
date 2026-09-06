@@ -8,10 +8,10 @@ export const teamData = {
     members: [
       {
         id: 1,
-        name: 'Sathakshi',
+        name: 'Satakshi',
         role: 'Female Lead Vocalist',
         quote: 'Screaming the truth and commanding the crowd.',
-        instagram: 'https://instagram.com/' 
+        linkedin: 'https://www.linkedin.com/in/satakshi-srivastava-119b3841a?utm_source=share_via&utm_content=profile&utm_medium=member_android' 
       },
       {
         id: 2,
@@ -21,49 +21,67 @@ export const teamData = {
         instagram: 'https://www.instagram.com/suyashmishra_official?igsi=MXZlNjh2cmpvaHQ0MA==' 
       },
       {
+        id: 2,
+        name: 'Ved',
+        role: 'Rap Artist',
+        instagram: 'https://www.instagram.com/not.v3d?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=='
+      },
+      {
         id: 3,
+        name: 'Aryan',
+        role: 'Rap Artist',
+        instagram: 'https://www.instagram.com/strikeofficial.10?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=='
+      },
+      {
+        id: 4,
         name: 'Shivashish Mishra',
         role: 'Male Lead Vocalist',
         instagram:'https://www.instagram.com/shivashish950?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=='
       },
       {
-        id: 4,
+        id: 5,
         name: 'Ravikant Choubey',
         role: 'Lead Vocalist',
         instagram: 'https://www.instagram.com/_ravikantchoubey?igsi=MTNoa3d3aHMyNjRpcA=='
       },
-      {id: 5,
+      {id: 6,
         name: 'Aditi',
         role: 'Vocalist',
         instagram: 'https://www.instagram.com/aditi_shukla.exe?igsi=Y2t2N2k5ZWI5aGdn'
       },
       {
-        id: 6,
+        id: 7,
         name: 'Ujjwal Srivastava',
         role: 'Vocalist/Guitarist',
         instagram: 'https://www.instagram.com/ujjwal.srivastava.3557?utm_source=qr&igsi=ZWxhbmRvYTkxeWY0'
       },
-      { id: 7,
+      { id: 8,
         name: 'Ayush Mishra',
         role: 'Vocalist',
         instagram: 'https://www.instagram.com/_.imstillayush.mp3?igsi=NXhqcGxsdTRoMzg=' 
       },
-      { id: 8,
+      { id: 9,
         name: 'Akash',
         role: 'Vocalist',
         instagram: 'https://www.instagram.com/akash.vocal?igsi=NGVudWNrZXo1OG9h',
       },
       {
-        id: 9,
+        id: 10,
         name: 'Kritika',
         role: 'Vocalist',
         instagram: 'https://www.instagram.com/krittttsss_?igsi=amh4OXg5emU5Y2Zk',
       },
+      {
+        id: 11,
+        name: 'Ansh Mishra',
+        role: 'Vocalist',
+        instagram: 'https://www.instagram.com/__ansh_mishra_5/?utm_source=ig_web_button_share_sheet'
+      }
     ]
   },
   instrumental: {
     id: 'instrumental',
-    title: 'The Instrumental Team',
+    title: 'Instrumental Team',
     category: 'MUSIC & RHYTHM',
     description: 'Heavy riffs, thundering beats, and intricate melodies driving the sonic pulse of Pravah.',
     members: [
