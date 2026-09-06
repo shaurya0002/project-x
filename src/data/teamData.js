@@ -22,20 +22,43 @@ export const teamData = {
       },
       {
         id: 3,
-        name: 'Kritika',
-        role: 'Vocalist',
-        instagram: 'https://www.instagram.com/krittttsss_?igsi=amh4OXg5emU5Y2Zk'
+        name: 'Shivashish Mishra',
+        role: 'Male Lead Vocalist',
+        instagram:'https://www.instagram.com/shivashish950?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=='
       },
-      { id: 4,
-        name: 'Akash',
-        role: 'Vocalist',
-        instagram: 'https://www.instagram.com/akash.vocal?igsi=NGVudWNrZXo1OG9h',
+      {
+        id: 4,
+        name: 'Ravikant Choubey',
+        role: 'Lead Vocalist',
+        instagram: 'https://www.instagram.com/_ravikantchoubey?igsi=MTNoa3d3aHMyNjRpcA=='
       },
       {id: 5,
         name: 'Aditi',
         role: 'Vocalist',
         instagram: 'https://www.instagram.com/aditi_shukla.exe?igsi=Y2t2N2k5ZWI5aGdn'
-      }
+      },
+      {
+        id: 6,
+        name: 'Ujjwal Srivastava',
+        role: 'Vocalist/Guitarist',
+        instagram: 'https://www.instagram.com/ujjwal.srivastava.3557?utm_source=qr&igsi=ZWxhbmRvYTkxeWY0'
+      },
+      { id: 7,
+        name: 'Ayush Mishra',
+        role: 'Vocalist',
+        instagram: 'https://www.instagram.com/_.imstillayush.mp3?igsi=NXhqcGxsdTRoMzg=' 
+      },
+      { id: 8,
+        name: 'Akash',
+        role: 'Vocalist',
+        instagram: 'https://www.instagram.com/akash.vocal?igsi=NGVudWNrZXo1OG9h',
+      },
+      {
+        id: 9,
+        name: 'Kritika',
+        role: 'Vocalist',
+        instagram: 'https://www.instagram.com/krittttsss_?igsi=amh4OXg5emU5Y2Zk',
+      },
     ]
   },
   instrumental: {
