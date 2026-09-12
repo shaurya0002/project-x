@@ -9,14 +9,14 @@ export const teamData = {
       {
         id: 1,
         name: 'Satakshi',
-        role: 'Female Lead Vocalist',
+        role: 'Vocalist',
         quote: 'Screaming the truth and commanding the crowd.',
         linkedin: 'https://www.linkedin.com/in/satakshi-srivastava-119b3841a?utm_source=share_via&utm_content=profile&utm_medium=member_android' 
       },
       {
         id: 2,
         name: 'Suyash',
-        role: 'Male Lead Vocalist',
+        role: 'Vocalist',
         quote: 'Adding power and harmonic depth to every chorus.',
         instagram: 'https://www.instagram.com/suyashmishra_official?igsi=MXZlNjh2cmpvaHQ0MA==' 
       },
@@ -35,13 +35,13 @@ export const teamData = {
       {
         id: 4,
         name: 'Shivashish Mishra',
-        role: 'Male Lead Vocalist',
+        role: 'Vocalist',
         instagram:'https://www.instagram.com/shivashish950?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=='
       },
       {
         id: 5,
         name: 'Ravikant Choubey',
-        role: 'Lead Vocalist',
+        role: 'Vocalist',
         instagram: 'https://www.instagram.com/_ravikantchoubey?igsi=MTNoa3d3aHMyNjRpcA=='
       },
       {id: 6,
@@ -52,7 +52,7 @@ export const teamData = {
       {
         id: 7,
         name: 'Ujjwal Srivastava',
-        role: 'Vocalist/Guitarist',
+        role: 'Vocalist',
         instagram: 'https://www.instagram.com/ujjwal.srivastava.3557?utm_source=qr&igsi=ZWxhbmRvYTkxeWY0'
       },
       { id: 8,
