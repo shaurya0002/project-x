@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import pravahLogo from '../assets/images/pravah-title-logo.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -32,12 +33,9 @@ export default function Hero() {
           animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
-          {/* Note: When you crop your logo from the poster, save it in src/assets/pravah-logo.png
-              and you can swap this text with the <img> tag below! */}
-          <h1 className="hero-logo-text fire-glow">Pravah</h1>
-          
-          {/* <img src="/src/assets/pravah-logo.png" alt="Pravah Logo" className="hero-logo-img" /> */}
+          <img src={pravahLogo} alt="Pravah Logo" className="hero-logo-img" />
         </motion.div>
+
 
         {/* Subtitle animation (fades in and rises slightly) */}
         <motion.p 

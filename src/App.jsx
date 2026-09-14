@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import TeamPage from './pages/TeamPage';
+import Events from './pages/Events';
 import Footer from './components/Footer';
 
 function App(){
@@ -16,6 +17,7 @@ function App(){
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/lineup/:teamId" element={<TeamPage />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
 
         <Footer />
@@ -24,4 +26,4 @@ function App(){
   );
 }
 
-export default App;
+export default App;

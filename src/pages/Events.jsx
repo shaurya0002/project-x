@@ -3,10 +3,10 @@ import { MapPin, Calendar, Sparkles } from 'lucide-react';
 import './Events.css';
 
 const EVENT_CONFIG = {
-  title: "Freshers 2026",
-  description: "Unleashing the sound of UCER once again! We're performing a special high-energy live set to welcome the new batch. Prepare for absolute madness.",
-  venue: "United Institue of Technology, main auditorium",
-  targetDate: "2026-07-25T10:00:00", 
+  title: "PRAVAH AUDITION 2026",
+  description: "Welcoming new talent on board, the music the passion the rythms shall not be quite and every talent deserves a stage to thrive!",
+  venue: "Music Room, UCER",
+  targetDate: "2026-09-23T00:00:00", 
 };
 
 // Renamed from 'Event' to 'Events' to avoid browser clash
@@ -66,7 +66,7 @@ export default function Events() {
       <div className="events-container">
         <div className="event-header">
           <span className="live-badge">
-            <Sparkles size={14} /> UPCOMING PERFORMANCE
+            <Sparkles size={14} /> UPCOMING Events
           </span>
           <h1 className="event-title glow-text">{EVENT_CONFIG.title}</h1>
           <p className="event-desc">{EVENT_CONFIG.description}</p>

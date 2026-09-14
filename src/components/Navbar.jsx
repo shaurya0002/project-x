@@ -55,6 +55,8 @@ export default function Navbar() {
           <img src={institutionLogo} alt="Institution Logo" className="institution-logo" />
           <span className="nav-logo glow-text">PRAVAH</span>
         </Link>
+
+
         
         <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
