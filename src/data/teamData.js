@@ -75,7 +75,7 @@ export const teamData = {
         id: 11,
         name: 'Ansh Mishra',
         role: 'Vocalist',
-        instagram: 'https://www.instagram.com/__ansh_mishra_5/?utm_source=ig_web_button_share_sheet'
+        instagram: 'https://www.instagram.com/ansh_sings_95?stkn=ZGE0NTR4OXZuN2hl'
       }
     ]
   },
