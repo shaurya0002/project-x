@@ -81,13 +81,13 @@ export const teamData = {
         id:13,
         name:'Advika Mishra',
         role:'Vocalist',
-        instagram:'',
+        instagram: null,
       },
       {
         id:14,
         name:'Jahnvi',
         role:'Vocalist',
-        instagram:'',
+        instagram: null,
       }
     ]
   },
@@ -171,9 +171,9 @@ export const teamData = {
       {
         id: 4,
         name: 'Aman',
-        role:'',
+        role:'Editors',
         quote:'',
-        instagram:'',
+        instagram:'https://www.instagram.com/aman_ac_1045/',
       },
       {
         id: 5,
