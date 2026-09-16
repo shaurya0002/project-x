@@ -116,9 +116,16 @@ export const teamData = {
       {
         id: 5,
         name: 'Apoorv Srivastava',
-        role:'Drums',
+        role:'Drummer',
         quote: 'Matching the beats',
         instagram: 'https://www.instagram.com/_psk47?igsi=MWN0amFnbXdpMjRiMg%3D%3D&utm_source=qr'
+      },
+      {
+        id: 6,
+        name: 'Shaurya Tripathi',
+        role: 'Drummer',
+        quote: 'Newcommer',
+        instagram: 'https://www.instagram.com/notshaurya.2?stkn=MTlja3piNXpmNWox',
       }
     ]
   },
