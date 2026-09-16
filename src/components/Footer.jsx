@@ -38,7 +38,7 @@ export default function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} PRAVAH. All Rights Reserved. Crafted for UCER.</p>
+        <p>&copy; {new Date().getFullYear()} PRAVAH. All Rights Reserved. Created for UCER.</p>
       </div>
     </footer>
   );
