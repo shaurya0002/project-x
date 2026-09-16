@@ -75,7 +75,19 @@ export const teamData = {
         id: 11,
         name: 'Ansh Mishra',
         role: 'Vocalist',
-        instagram: 'https://www.instagram.com/ansh_sings_95?stkn=ZGE0NTR4OXZuN2hl'
+        instagram: 'https://www.instagram.com/ansh_sings_95?stkn=ZGE0NTR4OXZuN2hl',
+      },
+      {
+        id:13,
+        name:'Advika Mishra',
+        role:'Vocalist',
+        instagram:'',
+      },
+      {
+        id:14,
+        name:'Jahnvi',
+        role:'Vocalist',
+        instagram:'',
       }
     ]
   },
@@ -131,7 +143,7 @@ export const teamData = {
   },
   'working-members': {
     id: 'working-members',
-    title: 'The Working Members',
+    title: 'The Media and Management Team',
     category: 'CREW & PRODUCTION',
     description: 'The dedicated backbone managing production, sound engineering, and seamless event execution.',
     members: [
@@ -154,7 +166,21 @@ export const teamData = {
         name: 'Mayank Shukla',
         role: 'Visual Graphics and video editing',
         quote: 'Enhancing the moments captured',
-        instagram: 'https://www.instagram.com/mankupulled?igsi=MXZoMGcyYXVnZmdocw=='
+        instagram: 'https://www.instagram.com/mankupulled?igsi=MXZoMGcyYXVnZmdocw==',
+      },
+      {
+        id: 4,
+        name: 'Aman',
+        role:'',
+        quote:'',
+        instagram:'',
+      },
+      {
+        id: 5,
+        name: 'Aryan',
+        role: ' ',
+        quote: '',
+        instagram: '',
       }
     ]
   }

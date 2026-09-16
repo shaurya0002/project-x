@@ -22,10 +22,10 @@ export default function Lineup() {
     },
     {
       id: 'working-members',
-      title: 'The Working Members',
+      title: 'The Media and Management Team',
       category: 'CREW & PRODUCTION',
       icon: <Sliders size={32} />,
-      quote: 'The creative backbone powering sound engineering, production, and execution.'
+      quote: 'The creative backbone of Pravah'
     }
   ];
 
