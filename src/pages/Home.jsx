@@ -9,9 +9,9 @@ export default function Home(){
         <>
         <Hero />
         <About />
+        <Events />
         <Lineup />
         <Gallery />
-        <Events />
         </>
     );
 }

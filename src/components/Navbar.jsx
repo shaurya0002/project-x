@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import institutionLogo from '../assets/images/institution-logo.png';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -50,11 +49,11 @@ export default function Navbar() {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'open' : ''}`}>
       <div className="nav-container">
         
-        {/* Top-left Institution Logo and Brand redirecting to Home */}
+        {/* Brand logo redirecting to Home */}
         <Link to="/" className="nav-brand-link" onClick={(e) => handleNavClick(e, '/', '#hero')}>
-          <img src={institutionLogo} alt="Institution Logo" className="institution-logo" />
-          <span className="nav-logo glow-text">PRAVAH</span>
+          <span className="nav-logo glow-text"> THE PRAVAH</span>
         </Link>
+
 
 
         
@@ -72,4 +71,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+}

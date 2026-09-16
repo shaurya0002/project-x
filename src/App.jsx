@@ -15,9 +15,9 @@ function App(){
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/register" element={<Register />} />
           <Route path="/lineup/:teamId" element={<TeamPage />} />
-          <Route path="/events" element={<Events />} />
         </Routes>
 
         <Footer />
