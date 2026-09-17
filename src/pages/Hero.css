@@ -123,7 +123,7 @@
 }
 
 .logo-container {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .hero-logo-text {
@@ -135,8 +135,8 @@
 }
 
 .hero-logo-img {
-  max-width: 540px;
-  width: 90%;
+  max-width: 440px;
+  width: 85%;
   height: auto;
   filter: drop-shadow(0 0 25px rgba(255, 85, 0, 0.6)) drop-shadow(0 0 12px rgba(255, 179, 0, 0.5));
   display: block;
@@ -149,8 +149,11 @@
   font-weight: 700;
   letter-spacing: 5px;
   color: var(--text-muted);
-  margin-bottom: 45px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
 }
+
 
 /* CTAs layout */
 .hero-buttons {
@@ -201,8 +204,15 @@
 }
 
 @media (max-width: 768px) {
-  .hero-logo-text { font-size: 42px; }
-  .hero-subtitle { font-size: 10px; letter-spacing: 2px; }
+  .hero-logo-img { 
+    max-width: 300px; 
+    width: 85%;
+  }
+  .hero-subtitle { 
+    font-size: 11px; 
+    letter-spacing: 3px; 
+    margin-bottom: 32px;
+  }
   .hero-buttons { flex-direction: column; gap: 12px; align-items: center; }
   .hero-btn { width: 100%; max-width: 280px; }
   /* 1. Shrink the giant glowing orbs so they fit mobile screens */
@@ -237,4 +247,4 @@
   .hero-section {
     padding: 0 16px;
   }
-}
+}
