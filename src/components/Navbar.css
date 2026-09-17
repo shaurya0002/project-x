@@ -37,10 +37,19 @@
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 2px;
-  color: var(--accent-gold);
+  background: linear-gradient(135deg, var(--accent-gold) 30%, var(--accent-orange) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(255, 85, 0, 0.4));
   text-decoration: none;
   transition: var(--transition-smooth);
 }
+
+.nav-brand-link:hover .nav-logo {
+  filter: drop-shadow(0 0 18px rgba(255, 85, 0, 0.8)) drop-shadow(0 0 25px rgba(255, 179, 0, 0.5));
+}
+
 
 
 
