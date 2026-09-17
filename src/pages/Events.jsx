@@ -6,7 +6,7 @@ const EVENT_CONFIG = {
   title: "PRAVAH AUDITION 2026",
   description: "Welcoming new talent on board, the music the passion the rythms shall not be quite and every talent deserves a stage to thrive!",
   venue: "Music Room, UCER",
-  targetDate: "2026-10-03T00:00:00", 
+  targetDate: "2026-10-05T12:20:00", 
 };
 
 // Renamed from 'Event' to 'Events' to avoid browser clash
