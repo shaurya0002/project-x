@@ -71,7 +71,7 @@ export default function About() {
               </div>
               <div className="stat-item">
                 <span className="stat-label">LINEUP SIZE</span>
-                <span className="stat-value">8 Members</span>
+                <span className="stat-value">18 Members</span>
               </div>
             </div>
 
