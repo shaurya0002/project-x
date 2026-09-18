@@ -63,7 +63,7 @@ export default function About() {
               </div>
               <div className="stat-item">
                 <span className="stat-label">ESTD</span>
-                <span className="stat-value">2026</span>
+                <span className="stat-value">2025</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">BASE</span>

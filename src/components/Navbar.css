@@ -34,7 +34,7 @@
 
 .nav-logo {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: 2px;
   background: linear-gradient(135deg, var(--accent-gold) 30%, var(--accent-orange) 100%);

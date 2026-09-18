@@ -44,7 +44,7 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          THE FIRST OFFICIAL ROCK BAND OF UCER
+          JOIN THE CHAOS!
         </motion.p>
 
         {/* Action buttons animation */}

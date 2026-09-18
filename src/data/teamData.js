@@ -34,9 +34,9 @@ export const teamData = {
       },
       {
         id: 4,
-        name: 'Shivashish Mishra',
-        role: 'Vocalist',
-        instagram:'https://www.instagram.com/shivashish950?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=='
+        name: 'Swarnim Mishra',
+        role: 'Rapper',
+        instagram:'https://www.instagram.com/shewannafomdj?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=='
       },
       {
         id: 5,
@@ -88,7 +88,14 @@ export const teamData = {
         name:'Jahnvi',
         role:'Vocalist',
         instagram: null,
+      },
+      {
+        id: 15,
+        name: 'Shivashish Mishra',
+        role: 'Vocalist',
+        instagram: 'https://www.instagram.com/shivashish950?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==',
       }
+
     ]
   },
   instrumental: {
