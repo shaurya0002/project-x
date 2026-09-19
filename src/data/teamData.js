@@ -178,16 +178,16 @@ export const teamData = {
       {
         id: 4,
         name: 'Aman',
-        role:'Editors',
+        role:'Editor',
         quote:'',
         instagram:'https://www.instagram.com/aman_ac_1045/',
       },
       {
         id: 5,
         name: 'Aryan',
-        role: ' ',
+        role: 'Editor',
         quote: '',
-        instagram: '',
+        instagram: 'https://www.instagram.com/iaryansharma_?stkn=MWE1NmlpYmNkNTJodA==',
       }
     ]
   }
