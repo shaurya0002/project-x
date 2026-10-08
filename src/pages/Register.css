@@ -260,3 +260,52 @@
   color: var(--text-muted);
   margin-bottom: 30px;
 }
+
+/* Closed Card details */
+.closed-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.closed-icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.closed-icon {
+  color: var(--accent-orange);
+  filter: drop-shadow(0 0 12px rgba(255, 85, 0, 0.5));
+}
+
+.closed-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.closed-message {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-orange);
+  margin-bottom: 16px;
+}
+
+.closed-subtext {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.link-btn {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
